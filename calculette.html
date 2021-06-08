@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+ <html>
+ 
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            CyberBoulier2077  
+        </title>
+        <script type="text/javascript" src="calculette.js"></script>
+        <link rel="stylesheet" type="text/css" href="calculette.css" media="all" />
+    </head>
+
+    
+    <body onLoad="onLoad()" class="innerbody">
+        
+        <table class="ecran">
+            <tr>
+                <td><div id="historique"> </div></td>
+            </tr> 
+            <tr>   
+                <td><div id="operation" class="left"></div></td>
+                <td><div id="input" class="right"></div></td>
+            </tr> 
+        </table>  
+    
+        <table class="calc" >
+            <tr >
+                <td><input type="button"  class="styled" value="CE " onClick="onCleanEverything()"></td>
+                <td><input type="button"  class="styled" value="C " onClick="onClean()"></td>
+                <td><input type="button"  class="styled" value="BKSP" onClick="onBackspace()"></td>
+                <td><input type="button"  class="styled" value="&divide" onClick="onOperant('/')"></td>
+            </tr>
+            <tr>
+                <td><input type="button"  class="styled" value="7" onClick="onValue('7')"></td>
+                <td><input type="button"  class="styled" value="8" onClick="onValue('8')"></td>
+                <td><input type="button"  class="styled" value="9" onClick="onValue('9')"></td>
+                <td><input type="button"  class="styled" value="*" onClick="onOperant('*')"></td>
+            </tr>   
+            <tr>
+                <td><input type="button"  class="styled" value="4" onClick="onValue('4')"></td>
+                <td><input type="button"  class="styled" value="5" onClick="onValue('5')"></td>
+                <td><input type="button"  class="styled" value="6" onClick="onValue('6')"></td>
+                <td><input type="button"  class="styled" value="-" onClick="onOperant('-')" ></td>
+            </tr>
+            <tr>
+                <td><input type="button"  class="styled" value="1" onClick="onValue('1')"></td>
+                <td><input type="button"  class="styled" value="2" onClick="onValue('2')"></td>
+                <td><input type="button"  class="styled" value="3" onClick="onValue('3')"></td>
+                <td><input type="button"  class="styled" value="+" onClick="onOperant('+')"></td>
+            </tr> 
+            <tr>
+                <td><input type="button"  class="styled" value="&plusmn" onClick="onPlusMn()"></td>
+                <td><input type="button"  class="styled" value="0" onClick="onValue('0')"></td>
+                <td><input type="button"  class="styled" value="," onClick="onVirgule()"></td>
+                <td><input type="button"  class="styled" value="=" onClick="onCalculer()"></td>
+            </tr> 
+        </table>          
+    </body>
+</html>
